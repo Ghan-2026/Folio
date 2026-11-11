@@ -1,0 +1,78 @@
+# Gradle / Kotlin
+.gradle
+.kotlin
+**/build/
+!src/**/build/
+captures
+.externalNativeBuild
+.cxx
+
+# Local machine config (SDK path, secrets)
+local.properties
+keystore.properties
+**/fastlane/report.xml
+**/fastlane/README.md
+**/play-service-account.json
+vendor/bundle/
+.wrangler/
+*.env
+.env.*
+.argent/secrets.env
+
+# IDEs
+*.iml
+.idea
+.vscode/
+.fleet/
+
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+iosApp/Pods/
+*.xcframework/
+
+# Android build outputs and signing
+*.apk
+*.aab
+*.ap_
+*.idsig
+*.jks
+*.keystore
+*.p12
+release/
+output-metadata.json
+
+# Private device backups and local release builds (user notebooks; never commit)
+apps/mobile/artifacts/recovery/*
+!apps/mobile/artifacts/recovery/README.md
+apps/mobile/artifacts/release/
+artifacts/release/
+*.knotes
+*.tar
+*.tgz
+
+# Logs and tooling
+*.log
+node_modules/
+
+# Bun, Turborepo and Astro
+.turbo/
+dist/
+.astro/
+.claude/settings.local.json
+
+# Screenshots of other apps stay local
+apps/mobile/artifacts/reader-design/boox-*.png
+__pycache__/
+
+# Firebase config for the maintainer's project (not a secret, but forks must use their own)
+apps/mobile/androidApp/google-services.json
+
