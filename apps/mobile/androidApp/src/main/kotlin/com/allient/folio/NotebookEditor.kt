@@ -942,7 +942,7 @@ internal fun NotebookEditor(
                         val left = points.minOf { it.x }; val right = points.maxOf { it.x }
                         val top = points.minOf { it.y }; val bottom = points.maxOf { it.y }
                         val lines = text.lines().size.coerceAtLeast(1)
-                        val size = ((bottom - top) * 960f / lines * .8f).coerceIn(12f, 96f)
+                        val size = ((bottom - top) * 960f / lines * .8f).coerceIn(12f, 22f)
                         val baseline = (if (below) bottom + .01f else top) + size * .85f / 960f
                         return InkText(text = text, x = left, y = baseline, size = size, layerId = strokes.first().layerId,
                             color = strokes.first().color, boxWidth = (right - left).coerceIn(.15f, .9f))
